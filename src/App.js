@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import TransactionsTable from "./components/TransactionsTable";
+import "./App.css";
+import Paper from "@mui/material/Paper";
+
 
 function App() {
+  const bgstyles = {
+    borderRadius: "0px",
+    minHeight: "100vh",
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="cont">
+    
+      <Paper sx={bgstyles} elevation={4}>
+        <div className="app">
+        <h1 className="main-head">Transaction <br></br>Dashboard</h1>
+            <TransactionsTable />
+   
+        </div>
+      </Paper>
+    
     </div>
   );
 }

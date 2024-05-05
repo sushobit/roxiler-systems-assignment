@@ -1,38 +1,65 @@
-.App {
+.app {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.homeButton:hover {
+  font-weight: 800;
+  font-size: large;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cont {
+  margin: 0;
+  margin: 0;
+  padding: 0;
+  background-color: aliceblue;
+}
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  background-color: aliceblue;
 }
 
-.App-link {
-  color: #61dafb;
+.main-head {
+  background-color: white;
+  border-radius: 100%;
+  padding: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.homeButton {
+  margin-right: 10px;
+}
+
+/* AppBar styles */
+AppBar {
+  background-color: #2196f3;
+}
+
+/* Paper (container) styles */
+Paper {
+  background-color: #e0e0e0; /* Change the background color here */
+}
+
+/* Button styles */
+Button {
+  text-transform: none;
+  font-weight: bold;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .app {
+    padding: 10px;
   }
 }
